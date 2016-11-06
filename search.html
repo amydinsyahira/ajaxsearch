@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>My To-Do List</title>
+<!-- -----------------------------------------------------	-->
+<!-- AUTHOR: Antonio Lupetti								-->
+<!-- E-MAIL: antonio.lupetti@gmail.com						-->
+<!-- WEBSITE: http://woork.blogspot.com						-->
+<!-- VERSION: 0.2										-->
+<!-- -----------------------------------------------------  -->
+<style type="text/css">
+body{font-family:'Lucida Grande', Verdana, sans-serif;; font-size:14px; color:#666666;}
+h2{color:#000000; margin-bottom:20px;}
+h3{color:#000000; font-size:14px;}
+input{font-size:16px; color:#444444;}
+a:link, a:visited, a:hover{color:#0033CC;}
+a:hover{text-decoration:none;}
+div.searchInput{padding:8px; background:#DEDEDE; clear:both;}
+div.footer{padding:6px; border-top:solid 1px #DEDEDE; font-size:10px;}
+#msg{background:#FFFFCC; margin-bottom:10px; padding:4px; display:none;}
+</style>
+
+<!-- XMLHTTPRequest and insertTask() function-->
+<script language="javascript" src="ajax_framework.js"></script>
+
+</head>
+
+<body>
+<h2>Ajax Search Engine</h2>
+
+<form id="searchForm" name="searchForm" method="post" action="javascript:searchNameq();">
+<div class="searchInput">
+<input name="searchq" type="text" id="searchq" size="30" onkeyup="javascript:searchNameq()"/>
+<input type="button" name="submitSearch" id="submitSearch" value="Search" onclick="javascript:searchNameq()"/>
+</div>
+</form>
+
+<h3>Search Results</h3>
+<div id="msg">Type something into the input field</div>
+<div id="search-result"></div>
+
+<div class="footer">
+For info please visit <a href="http://woork.blogspot.com">woork.blogspot.com</a> or send me an e-mail to <a href="mailto:antonio.lupetti@gmail.com">antonio.lupetti@gmail.com</a></div>
+</body>
+</html>
